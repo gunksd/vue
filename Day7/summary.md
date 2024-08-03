@@ -1,5 +1,5 @@
-1.对于这个filterTodos的计算属性的规则理解不透彻，实际是返回一个数组，而不是改变原来的这个数组里面的值。
-2.？XX:XX的写法需要熟悉：
+1.对于这个filterTodos的计算属性的规则理解不透彻，实际是返回一个数组，而不是改变原来的这个数组里面的值。<br>
+2.`？XX:XX`的写法需要熟悉：
 ```JavaScript
   return hideCompleted.value
     ? todos.value.filter((t) => !t.done)
@@ -22,6 +22,6 @@ todos.value 是 expr2 部分：
 
 如果 hideCompleted.value 为 false，返回整个 todos.value 数组，这意味着显示所有待办事项，不论是否已完成。
 ```
-3.双向绑定的应用，渲染列表的逻辑都大可深究，详细见GPT链接
+3.双向绑定的应用，渲染列表的逻辑都大可深究，详细见GPT链接<br>
 
 4.GPT Link:https://chatgpt.com/share/510cf0ae-634c-4deb-aa56-2ab67eca606c
