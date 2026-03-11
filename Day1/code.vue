@@ -2,26 +2,29 @@
 //我们可以根据 JavaScript 的状态来描述 HTML 应该是什么样子的。当状态改变时, HTML 会自动更新。
 //SFC
 <script setup>
-import { ref , reactive } from 'vue'
-const counter = reactive({
-    count:0
+import { ref,reactive } from 'vue';
+
+const counter = reactive ({
+  counter:0
 })
-const message = ref('Hello Vue!')
-const increment = () =>{
-    counter.count++
+
+const message = ref("Hello World!")
+const increment = () => {
+        counter.counter++
 }
-console.log(counter.count) //print result is 0
+
+console.log(counter.counter)
 console.log(message.value)
 </script>
 
 <template>
-    <button @click="increment">
-        <h1>
-            {{ message }}
-        </h1>
-    </button>
+  <button @click="increment"> 
+    <h1>
+       {{ message }}
+    </h1>
+ </button>
 
-    <p>
-        Count is :{{ counter.count }}
-    </p>
+ <p>
+  Count is :{{ counter.counter }}
+ </p>
 </template>
