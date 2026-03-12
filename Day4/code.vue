@@ -10,8 +10,8 @@ const increment = () => {
 </script>
 
 <template>
-  <div>
-    <h1 class="container">
+  <div class="container">
+    <h1>
       VUE  counter
     </h1>
     <div class="controls">
